@@ -1,0 +1,10 @@
+docker pull sravangcpdocker/toolkit:11
+
+docker run sravangcpdocker/toolkit:11
+
+docker run -it -d sravangcpdocker/toolkit:11 bin/bash
+
+docker exec -it cbe0e16582da /bin/bash
+docker container stop $(docker container ls -aq)
+
+docker rmi -f $(docker images -aq)
